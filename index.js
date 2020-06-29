@@ -1,13 +1,34 @@
 /**
- * DO WHILE. Task 3
+ * DO WHILE. Task 4
  * @type {number}
  */
-let number = Number(prompt('Введите ваше число'));
-let power = Number(prompt('В какую степень возвести?'));
-let count = 0;
-let result = 0;
-while (count < power) {
-    result += number * number;
-    ++count;
+let firstNumber = Number(prompt('Введите ваше первое число'));
+let secondNumber = Number(prompt('Введите ваше второе число'));
+let count = 1;
+let divider1 = 0;
+let divider2 = 0;
+if (firstNumber > secondNumber) {
+    while (count < firstNumber) {
+        if (firstNumber % count === 0 && secondNumber % count === 0) {
+            divider1 = firstNumber / count;
+            divider2 = secondNumber / count;
+            console.log(divider1, divider2);
+            ++count;
+        } else  {
+            ++count;
+        }
+    }
+} else {
+    while (count < secondNumber) {
+        if (firstNumber % count === 0 && secondNumber % count === 0) {
+            divider1 = firstNumber / count;
+            divider2 = secondNumber / count;
+            console.log(divider1, divider2);
+            ++count;
+        }else {
+            ++count;
+        }
+
+    }
 }
-alert(result);
+
