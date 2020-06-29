@@ -1,12 +1,9 @@
 /**
- * DO WHILE. Task 1
+ * DO WHILE. Task 2
  * @type {number}
  */
 let userInput = Number(prompt('Введите ваше значение'));
-let count = 0;
-
-while (count < userInput) {
-    ++count;
-    alert('#');
-
+while (userInput !== 0) {
+    alert(userInput);
+    --userInput;
 };
