@@ -1,10 +1,12 @@
 /**
- * Do while. Task 6
- * @param {number}
+ * Do while. Task 7
+ * @type {number}
  */
-let value;
-let rightAnswer = 6;
+let value = 1000;
+let divider = 2;
+let count = 0;
 do {
-    value = Number(prompt('Сколько будет 2 + 2 * 2'));
-} while (value !== rightAnswer);
-
+    value = value / 2;
+    ++count;
+} while (value > 50);
+alert(`${value}; ${count}`);
