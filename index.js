@@ -1,12 +1,11 @@
 /**
- * Do while. Task 7
+ * Do while. Task 8
  * @type {number}
  */
-let value = 1000;
-let divider = 2;
-let count = 0;
-do {
-    value = value / 2;
-    ++count;
-} while (value > 50);
-alert(`${value}; ${count}`);
+let value = Number(prompt('Введите ваше число'));
+for (let i = value; i < 100; i += value) {
+    if (i % value === 0) {
+        console.log(i);
+    }
+
+}
