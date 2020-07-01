@@ -1,15 +1,10 @@
 /**
- *
- * @type {number}
+ * Do while. Task 6
+ * @param {number}
  */
-let value = Number(prompt('Введите ваше число'));
-let factorial = value;
-let count = value;
-
-while (count > 1) {
-    count--
-    factorial = factorial * count;
-    alert(factorial);
-}
-
+let value;
+let rightAnswer = 6;
+do {
+    value = Number(prompt('Сколько будет 2 + 2 * 2'));
+} while (value !== rightAnswer);
 
